@@ -1,0 +1,61 @@
+html{
+  background-color: rgb(204, 235, 219);
+  font-family: 'Encode Sans Expanded', sans-serif;
+}
+h1{
+  font-family: 'Germania One', cursive;
+  /*taille de la police :    1em = 16px il me semble*/
+  font-size: 4em;
+  /*Je te conseil "color-picker" sur Atom, il est pratique (Ctrl+Alt+C)*/
+  color: rgb(53, 200, 190);
+  text-align: center;
+}
+h2{
+  margin: 1em;
+  font-size: 2em;
+  text-align: center;
+}
+h3{
+  margin: 1em;
+  font-size: 1.5em;
+  text-align: center;
+}
+h4{
+  margin: 1em;
+  font-size: 1.25em;
+  text-align: center;
+}
+p{
+  padding-top: 1em;
+}
+/*Un peu de style en augmentant la taille de la première lettre*/
+p::first-letter{
+  font-size: 1.5em;
+}
+li{
+  margin: 1em;
+}
+li::before{
+  padding-right: 0.5em;
+  content: "✓"
+}
+.centre{
+  text-align: center;
+}
+.note{
+  border-left: solid rgb(201, 153, 10) 5px;
+  padding-right: 0.1em;
+  padding-top: 0em;
+  background-color: rgb(255, 255, 255);
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  /*"Coupe" l'élément avant la fin. évite que le Background blanc se propage jusqu'en bout de ligne*/
+  display: inline-flex;
+}
+/*Modif des colonnes de simplegrid.css*/
+[class*='col-']{
+  background-color: rgb(14, 134, 195);
+  border-radius: 1em;
+  border: solid;
+  padding: 0.5em;
+}
