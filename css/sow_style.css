@@ -1,13 +1,23 @@
 html{
-  background-color: rgb(204, 235, 219);
+  /* height permet de prendre toute la place disponible sur la page*/
+  height: 100%;
+  background-color: rgb(51, 51, 51);
   font-family: 'Encode Sans Expanded', sans-serif;
+}
+body{
+  /*fonctionne de pair avec height dans html*/
+  height: 100%;
+  background-color: rgb(51, 51, 51);
+  /*légère ombre tout autour de la page*/
+  box-shadow: inset 0 0 5rem rgba(0,0,0,.5);
 }
 h1{
   font-family: 'Germania One', cursive;
   /*taille de la police :    1em = 16px il me semble*/
   font-size: 4em;
-  /*Je te conseil "color-picker" sur Atom, il est pratique (Ctrl+Alt+C)*/
-  color: rgb(53, 200, 190);
+  padding: 1rem;
+  /*Je conseil "color-picker" sur Atom, il est pratique (Ctrl+Alt+C)*/
+  color: rgba(255,255,255,0.5);
   text-align: center;
 }
 h2{
@@ -56,6 +66,6 @@ li::before{
 [class*='col-']{
   background-color: rgb(14, 134, 195);
   border-radius: 1em;
-  border: solid;
+  border: solid rgba(255,255,255,0.5);;
   padding: 0.5em;
 }
